@@ -1,0 +1,17 @@
+//Diapason namespace is here created for first time
+public class Diapason.Window : Gtk.ApplicationWindow {
+  public Window (Gtk.Application app) {
+    Object (
+      application: app
+    );
+  }
+  
+  construct {
+    title = "this is my vala test";
+    window_position = Gtk.WindowPosition.CENTER;
+    set_default_size (350, 180);
+    
+    show_all ();
+  }
+  
+}
